@@ -50,6 +50,36 @@
 footer{border-top:1px solid #b98d5966;color:#f2dfc6}
 @media(max-width:650px){.hero,.visual-banner{min-height:245px}#inicio>.hero{min-height:290px}.hero svg{width:100%;height:auto}.media-tile{min-height:140px}}
 @media(prefers-reduced-motion:reduce){.media-tile:before{transition:none}}
+</style><style>
+/* Seis mundos, seis cenários imersivos — navegação e conteúdos preservados */
+.panel{position:relative;isolation:isolate;overflow:hidden}
+.panel>*{position:relative;z-index:1}
+.panel::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(180deg,#06101d18,#06101d66 48%,#06101dcf),var(--world-image) center center/cover no-repeat;opacity:.82}
+.panel::after{content:var(--world-label);position:relative;display:block;margin-top:30px;padding:14px 18px;border-top:1px solid var(--world-accent);font-family:Georgia,serif;letter-spacing:.08em;font-size:13px;color:var(--world-accent);text-align:right;text-transform:uppercase}
+.panel>.tag{display:inline-block;padding:7px 12px;background:#09172bcc;border:1px solid var(--world-accent);border-radius:99px;color:var(--world-accent);box-shadow:0 3px 18px #0009}
+.panel>.sectiontitle{color:var(--world-accent)}
+.panel .card{background:linear-gradient(155deg,#0a1728ee,#15283be8);border-color:color-mix(in srgb,var(--world-accent) 55%,transparent)}
+.panel .card h3{color:var(--world-accent)}
+.panel .btn.primary{background:linear-gradient(120deg,var(--world-accent),#e4ad69);border-color:var(--world-accent);color:#13202a}
+.panel .notice{border-left-color:var(--world-accent)}
+#inicio{--world-label:"Mundo I · O Grande Portal";--world-accent:#ffcf80;--world-image:url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=85')}
+#inspirar{--world-label:"Mundo II · Observatório dos Mundos";--world-accent:#9ce9ff;--world-image:url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1800&q=85')}
+#laboratorio{--world-label:"Mundo III · Oficina do Criador";--world-accent:#f5c276;--world-image:url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1800&q=85')}
+#galeria{--world-label:"Mundo IV · Museu dos Mundos";--world-accent:#a7e7c2;--world-image:url('https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1800&q=85')}
+#imersao{--world-label:"Mundo V · Portal do Futuro";--world-accent:#c7aaff;--world-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1800&q=85')}
+#refletir{--world-label:"Mundo VI · Biblioteca da Sabedoria";--world-accent:#f7d9a1;--world-image:url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1800&q=85')}
+#inspirar .visual-banner{background:linear-gradient(90deg,#061224dd,#0c274455,#061224cc),url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1500&q=85') center/cover}
+#imersao .hero{background:linear-gradient(90deg,#080e27cc,#1e164755,#080e27cc),url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1500&q=85') center/cover}
+#laboratorio .media-tile{border-color:#c49b67}
+#galeria .card{border-color:#7fbca0}
+#refletir .input{border-color:#c3a579}
+.nav button[data-tab="inicio"]{border-bottom:3px solid #ffcf80}
+.nav button[data-tab="inspirar"]{border-bottom:3px solid #9ce9ff}
+.nav button[data-tab="laboratorio"]{border-bottom:3px solid #f5c276}
+.nav button[data-tab="galeria"]{border-bottom:3px solid #a7e7c2}
+.nav button[data-tab="imersao"]{border-bottom:3px solid #c7aaff}
+.nav button[data-tab="refletir"]{border-bottom:3px solid #f7d9a1}
+@media(max-width:650px){.panel::after{text-align:center;font-size:11px}.panel::before{opacity:.68}}
 </style></head><body><div class="shell">
 <header><div><div class="brand">Oficina de ambientes web imersivos</div><h1 class="title">Uma Disciplina,<br>Um Mundo<span style="color:#73e5ed">.</span></h1><p class="subtitle">Da intenção pedagógica à criação de um AWI no FrameVR. Uma oficina em que cada participante constrói o seu próprio mundo.</p></div><div><div class="pill">120 minutos · Qualquer disciplina</div><p class="mini">Primeiro criar. Depois espreitar em VR.</p></div></header>
 <nav class="nav" aria-label="Navegação da oficina"><button data-tab="inicio" class="active">Átrio</button><button data-tab="inspirar">Inspiração</button><button data-tab="laboratorio">Laboratório</button><button data-tab="galeria">Galeria</button><button data-tab="imersao">Porta VR</button><button data-tab="refletir">Reflexão</button></nav>
