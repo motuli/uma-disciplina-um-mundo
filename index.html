@@ -116,6 +116,20 @@ header .title{font-family:Georgia,serif;color:#ffe4b4;font-size:clamp(35px,4.5vw
 #imersao .hero .photographic-gateway{display:none}
 #imersao .hero{min-height:350px}
 @media(max-width:650px){.panel{min-height:70vh}.panel::before{background:linear-gradient(180deg,#06111f99,#06111fdc 35%,#06111fe9),var(--world-image) center/cover no-repeat}.nav{position:relative}#inicio .hero{min-height:420px}#inicio .hero>div{padding:15px}}
+</style><style>
+/* Átrio clean: uma só hierarquia textual, fotografia sem texto incorporado */
+#inicio{background:#091727;--world-image:url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=85')}
+#inicio .hero{min-height:clamp(380px,54vw,590px);display:flex;align-items:center;justify-content:flex-start;text-align:left;padding:clamp(22px,5vw,65px);background:linear-gradient(90deg,#06111df0 0%,#071422b8 42%,#07142216 78%),url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=85') center/cover;box-shadow:inset 0 0 80px #06101b77}
+#inicio .hero>div{max-width:490px;margin:0;padding:0;border:0;background:transparent;box-shadow:none;backdrop-filter:none}
+#inicio .hero h2{font-size:clamp(34px,4.4vw,56px);font-family:Georgia,serif;line-height:1.1;margin:0 0 20px;text-shadow:0 3px 18px #000}
+#inicio .hero .muted{font-size:clamp(16px,1.6vw,20px);line-height:1.55;color:#fff3df;margin:0 0 26px;max-width:430px}
+#inicio .hero .btn{padding:15px 25px}
+#inicio .hero .photographic-gateway{display:none}
+#inicio .grid{margin-top:18px}
+#inicio .card{padding:16px 19px}
+#inicio .card h3{margin-bottom:6px}
+#inicio .card p{margin:0}
+@media(max-width:680px){#inicio .hero{min-height:430px;background:linear-gradient(180deg,#06111dcd,#06111d90),url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=85') center/cover}#inicio .hero>div{max-width:100%}}
 </style></head><body><div class="shell">
 <header><div><div class="brand">Oficina de ambientes web imersivos</div><h1 class="title">Uma Disciplina,<br>Um Mundo<span style="color:#73e5ed">.</span></h1><p class="subtitle">Da intenção pedagógica à criação de um AWI no FrameVR. Uma oficina em que cada participante constrói o seu próprio mundo.</p></div><div><div class="pill">120 minutos · Qualquer disciplina</div><p class="mini">Primeiro criar. Depois espreitar em VR.</p></div></header>
 <nav class="nav" aria-label="Navegação da oficina"><button data-tab="inicio" class="active">Átrio</button><button data-tab="inspirar">Inspiração</button><button data-tab="laboratorio">Laboratório</button><button data-tab="galeria">Galeria</button><button data-tab="imersao">Porta VR</button><button data-tab="refletir">Reflexão</button></nav>
