@@ -12,6 +12,44 @@
 .media-tile{background:#102b47;border:1px solid #38627e;border-radius:14px;padding:12px;text-align:center}
 .media-tile strong{display:block;margin-top:8px}
 .media-tile svg{height:90px;width:100%}
+</style><style>
+/* Identidade cinematográfica transversal: fotografia, profundidade e luz dourada */
+:root{color:#fff3df;background:#091323}body{background:linear-gradient(180deg,#071324e8,#071324f5),url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1800&q=85') center top/cover fixed}
+.brand,.tag{color:#ffce82}.title{font-family:Georgia,serif;letter-spacing:-.035em;text-shadow:0 3px 25px #0009}.title span{color:#ffd180!important}.subtitle{color:#f0dcc6}.pill{border-color:#d4a75c;color:#ffe1aa;background:#231d20aa}
+.panel{background:linear-gradient(140deg,#081628ef,#132a3cea);border-color:#bb8a5277;box-shadow:0 24px 70px #0008;backdrop-filter:blur(9px)}
+.nav button,.btn{background:linear-gradient(145deg,#1c293b,#102035);border-color:#a78055;color:#f9e7cb;box-shadow:inset 0 1px #ffffff15}
+.nav button.active,.btn.primary{background:linear-gradient(115deg,#f8c76d,#d89539);border-color:#ffd891;color:#1e1b1b}
+.card,.media-tile{background:linear-gradient(155deg,#16354ce8,#0b192be8);border-color:#9d764f88;box-shadow:0 12px 28px #0005}
+.card h3{color:#ffd38a}.muted,.card p{color:#e3d9d1}
+.hero,.visual-banner{min-height:360px;background:linear-gradient(90deg,#081324aa,#0a19301a 50%,#071324aa),url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1400&q=85') center/cover;border:1px solid #e4b86b99;box-shadow:inset 0 0 90px #0007,0 16px 45px #0007}
+.hero svg,.visual-banner svg{filter:drop-shadow(0 10px 22px #000a) drop-shadow(0 0 15px #d9a25377)}
+.hero h2,.sectiontitle{font-family:Georgia,serif;color:#ffe1a4;text-shadow:0 3px 15px #000}
+.media-grid{grid-template-columns:repeat(auto-fit,minmax(165px,1fr))}
+.media-tile{position:relative;overflow:hidden;min-height:175px;display:flex;flex-direction:column;justify-content:end;align-items:center;text-shadow:0 2px 8px #000}
+.media-tile:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#071423f5,#07142316 75%),var(--scene) center/cover;transition:transform .5s}
+.media-tile:hover:before{transform:scale(1.08)}
+.media-tile svg{position:relative;width:70px;height:65px;filter:drop-shadow(0 5px 10px #000a)}
+.media-tile strong{position:relative;font-family:Georgia,serif;font-size:17px;color:#fff0d2}
+.media-tile:nth-child(1){--scene:url('https://images.unsplash.com/photo-1456324504439-367cee3b3c32?auto=format&fit=crop&w=500&q=80')}
+.media-tile:nth-child(2){--scene:url('https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=500&q=80')}
+.media-tile:nth-child(3){--scene:url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=500&q=80')}
+.media-tile:nth-child(4){--scene:url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80')}
+.media-tile:nth-child(5){--scene:url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=500&q=80')}
+#inspirar{background:linear-gradient(180deg,#091a2de9,#081a2df5),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1300&q=85') center/cover}
+#laboratorio{background:linear-gradient(180deg,#081a2bea,#0b1c2df4),url('https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=1300&q=85') center/cover}
+#galeria{background:linear-gradient(180deg,#081a2bea,#0b1c2df4),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1300&q=85') center/cover}
+#imersao{background:linear-gradient(180deg,#081a2bea,#0b1c2df4),url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1300&q=85') center/cover}
+#refletir{background:linear-gradient(180deg,#081a2bea,#0b1c2df4),url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1300&q=85') center/cover}
+#inspirar>.visual-banner{background:linear-gradient(90deg,#081324b8,#0b17251c,#081324b8),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1300&q=85') center/cover}
+#inicio>.hero{min-height:430px}
+#inicio>.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,#e8b35b33,transparent 48%);pointer-events:none}
+#inicio>.hero>div{position:relative;z-index:1}
+.notice,blockquote{background:#1c2c3bdf;border-left-color:#e8b96c}
+.progress>div{background:linear-gradient(90deg,#a7692e,#ffd885)}
+.input{background:#0a1a2beb;border-color:#b39068;color:#fff6e7}
+footer{border-top:1px solid #b98d5966;color:#f2dfc6}
+@media(max-width:650px){.hero,.visual-banner{min-height:245px}#inicio>.hero{min-height:290px}.hero svg{width:100%;height:auto}.media-tile{min-height:140px}}
+@media(prefers-reduced-motion:reduce){.media-tile:before{transition:none}}
 </style></head><body><div class="shell">
 <header><div><div class="brand">Oficina de ambientes web imersivos</div><h1 class="title">Uma Disciplina,<br>Um Mundo<span style="color:#73e5ed">.</span></h1><p class="subtitle">Da intenção pedagógica à criação de um AWI no FrameVR. Uma oficina em que cada participante constrói o seu próprio mundo.</p></div><div><div class="pill">120 minutos · Qualquer disciplina</div><p class="mini">Primeiro criar. Depois espreitar em VR.</p></div></header>
 <nav class="nav" aria-label="Navegação da oficina"><button data-tab="inicio" class="active">Átrio</button><button data-tab="inspirar">Inspiração</button><button data-tab="laboratorio">Laboratório</button><button data-tab="galeria">Galeria</button><button data-tab="imersao">Porta VR</button><button data-tab="refletir">Reflexão</button></nav>
