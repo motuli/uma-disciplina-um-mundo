@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node -e \"const fs=require('fs');fs.mkdirSync('dist',{recursive:true});fs.copyFileSync('index.html','dist/index.html');\""
+    "build": "node -e \"const fs=require('fs');fs.mkdirSync('dist/tutorial-framevr',{recursive:true});fs.copyFileSync('index.html','dist/index.html');fs.copyFileSync('tutorial-framevr/index.html','dist/tutorial-framevr/index.html');\""
   },
   "dependencies": {
     "@netlify/blobs": "11.1.9"
